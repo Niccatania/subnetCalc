@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subnet Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Network address Calculator</h1>
@@ -12,15 +13,17 @@
     <h3>Enter Ipv4 address</h3>
     <input id="ip" type="text" placeholder="IP address">
 
-    <button onclick="convertToBinary()"> Retrun as Binary </button>
+    <button onclick="convertToBinary('ip','returnedBinary')"> Return as Binary </button>
 
     <p id="returnedBinary"></p>
 
     
-    <form>
+  
         <h3>Enter Subnet mask</h3>
         <input id="mask" type="text" placeholder="Subnet Mask">
-    </form>
+        <button onclick="convertToBinary('mask', 'returnedBinary2')"> Return as Binary</button>
+        <p id="returnedBinary2"></p>
+    
 </body>
 <script src="script.js"></script>
 </html>

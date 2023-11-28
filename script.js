@@ -1,15 +1,25 @@
-function convertToBinary(){
+function convertToBinary(inputID, outputID) {
 
-let IpInput = document.getElementById("ip").value;
+let IpInput = document.getElementById(inputID).value;
+let arr = IpInput.split(/\./)
+let binaryArr = [];
 
-let decConversion = parseInt(IpInput)
 
+for (let i=0; i < arr.length; i++){
+
+let decConversion = parseInt(arr[i]);
 let binaryReturn = decimalToBinary(decConversion);
+binaryArr.push(binaryReturn);
+}
+
+
+let binaryIP = binaryArr.join('.')
 
 console.log("Decimal", IpInput)
-console.log("Binary", binaryReturn)
+console.log("Binary", binaryIP)
+console.log(arr)
 
-document.getElementById('returnedBinary').textContent = binaryReturn;
+document.getElementById(outputID).textContent = binaryIP;
 }
 
 function decimalToBinary(decConversion) {
