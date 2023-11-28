@@ -9,3 +9,5 @@ After diving into subnetting I wanted to code a way for myself to make the time 
 
 Functioning decimal to binary calculator taking the ip and subnet mask then converting them to binary returning the data on screen
 
+# Link
+https://niccatania.github.io/subnetCalc/
